@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrator Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- morris.js chart -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="header-left">
+          <div class="navigasi">
+            <div class="pull-left">
+              <button type="button" class="navbar-toggle" id="menu-toggle">
+                <span class="sr-only">Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+          </div>
+          <a class="navbar-brand hidden-xs" href="#">PSIT</a>
+        </div>
+        <div class="header-right">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="glyphicon glyphicon-cog"></i> <!--span class="caret"></span-->
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;User Profile</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i>&nbsp;&nbsp;Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="leftpanel">
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>Beranda</span></a></li>
+              <li class="parent"><a href="#"><i class="fa fa-edit"></i> <span>Form</span></a>
+                <ul class="children">
+                  <li><a href="editor.html">Text Editor</a></li>
+                  <li><a href="#">General Forms</a></li>
+                  <li><a href="#">Layout Forms</a></li>
+                  <li><a href="#">Validation</a></li>
+                </ul>
+              </li>
+              <li class="parent"><a href="#"><i class="fa fa-bars"></i> <span>Tables</span></a>
+                <ul class="children">
+                  <li><a href="#">Basic Tables</a></li>
+                  <li><a href="#">Data Tables</a></li>
+                </ul>
+              </li>
+              <li class="parent"><a href="#"><i class="fa fa-file-text"></i> <span>Pages</span></a>
+                <ul class="children">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="pageheader">
+                <ul class="breadcrumb">
+                  <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
+                  <li>Dashboard</li>
+                </ul>
+              </div>
+              <div class="content-panel">
+                <blockquote>
+                  <i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+                <div class="row">
+                  <div class="col-md-8 col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                          <h5 class="md-title">Site Statistics</h5>
+                          <div id="basicFlotLegend" class="flotLegend"></div>
+                          <div id="basicflot" class="flotChart"></div>
+                      </div><!-- panel-body -->
+                      <div class="panel-footer">
+                        <div class="tinystat">
+                            <div id="sparkline" class="chart"></div>
+                            <div class="datainfo">
+                                <span class="text-muted">IPS</span>
+                                <h4>3.46</h4>
+                            </div>
+                        </div><!-- tinystat -->
+                        <div class="tinystat pull-right">
+                            <div id="sparkline2" class="chart"></div>
+                            <div class="datainfo">
+                                <span class="text-muted">IPK</span>
+                                <h4>3.05</h4>
+                            </div>
+                        </div><!-- tinystat -->
+                      </div><!-- panel-footer -->
+                    </div><!-- panel -->
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active"><a href="#home7" data-toggle="tab">Menu 1</a></li>
+                        <li><a href="#profile7" data-toggle="tab">Menu 2</a></li>
+                        <li><a href="#about7" data-toggle="tab">Menu 3</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home7">
+                            <h4 class="nomargin">Description 1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent velit mi, pharetra at augue pulvinar, posuere semper ex. Mauris mollis velit id sapien rutrum hendrerit.</p>
+                        </div><!-- tab-pane -->
+
+                        <div class="tab-pane" id="profile7">
+                            <h4 class="nomargin">Description 2</h4>
+                            <p>Nulla vestibulum id eros nec sodales. In non turpis accumsan, rhoncus est quis, lacinia odio. Curabitur pellentesque ante in magna imperdiet, et sodales turpis egestas.</p>
+                        </div><!-- tab-pane -->
+
+                        <div class="tab-pane" id="about7">
+                            <h4 class="nomargin">Description 3</h4>
+                            <p>Aliquam vestibulum mollis neque a placerat. Cras commodo porttitor eros, non semper urna facilisis vel. Donec ut feugiat tellus. Duis efficitur vitae urna sit amet ullamcorper.</p>
+                        </div><!-- tab-pane -->
+                    </div><!-- tab-content -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="button" id="headingOne" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="panel-title">
+                            <!-- <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> -->
+                              Collapsible Group Item #1
+                            <!-- </a> -->
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="button" id="headingTwo" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <h4 class="panel-title">
+                            <!-- <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> -->
+                              Collapsible Group Item #2
+                            <!-- </a> -->
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="button" id="headingThree" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          <h4 class="panel-title">
+                            <!-- <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> -->
+                              Collapsible Group Item #3
+                            <!-- </a> -->
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <!-- flot chart -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/flot/jquery.flot.min.js"></script>
+    <script src="js/flot/jquery.flot.resize.min.js"></script>
+    <script src="js/flot/jquery.flot.spline.min.js"></script>
+    <script src="js/flot/jquery.flot.symbol.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+
+</body>
+
+</html>

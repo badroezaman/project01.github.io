@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrator Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- morris.js chart -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="header-left">
+        <div class="navigasi">
+          <div class="pull-left">
+            <button type="button" class="navbar-toggle" id="menu-toggle">
+              <span class="sr-only">Toggle</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
+        <a class="navbar-brand hidden-xs" href="#">PSIT</a>
+      </div>
+        <div class="header-right">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;User Profile</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-off"></i>&nbsp;&nbsp;Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="leftpanel">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="index.html"><i class="fa fa-home"></i> <span>Beranda</span></a></li>
+              <li class="parent active"><a href="#"><i class="fa fa-edit"></i> <span>Form</span></a>
+                <ul class="children">
+                  <li class="active"><a href="editor.html">Text Editor</a></li>
+                  <li><a href="#">General Forms</a></li>
+                  <li><a href="#">Layout Forms</a></li>
+                  <li><a href="#">Validation</a></li>
+                </ul>
+              </li>
+              <li class="parent"><a href="#"><i class="fa fa-bars"></i> <span>Tables</span></a>
+                <ul class="children">
+                  <li><a href="#">Basic Tables</a></li>
+                  <li><a href="#">Data Tables</a></li>
+                </ul>
+              </li>
+              <li class="parent"><a href="#"><i class="fa fa-file-text"></i> <span>Pages</span></a>
+                <ul class="children">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="pageheader">
+                <ul class="breadcrumb">
+                  <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
+                  <li>Form / Text Editor</li>
+                </ul>
+              </div>
+              <div class="content-panel">
+                <div id="t-editor">
+                  <div id="alerts"></div>
+                  <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Font"><i class="fa fa-font"></i><b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a data-edit="fontName Serif" style="font-family:'Serif'">Serif</a></li><li><a data-edit="fontName Sans" style="font-family:'Sans'">Sans</a></li><li><a data-edit="fontName Arial" style="font-family:'Arial'">Arial</a></li><li><a data-edit="fontName Arial Black" style="font-family:'Arial Black'">Arial Black</a></li><li><a data-edit="fontName Courier" style="font-family:'Courier'">Courier</a></li><li><a data-edit="fontName Courier New" style="font-family:'Courier New'">Courier New</a></li><li><a data-edit="fontName Comic Sans MS" style="font-family:'Comic Sans MS'">Comic Sans MS</a></li><li><a data-edit="fontName Helvetica" style="font-family:'Helvetica'">Helvetica</a></li><li><a data-edit="fontName Impact" style="font-family:'Impact'">Impact</a></li><li><a data-edit="fontName Lucida Grande" style="font-family:'Lucida Grande'">Lucida Grande</a></li><li><a data-edit="fontName Lucida Sans" style="font-family:'Lucida Sans'">Lucida Sans</a></li><li><a data-edit="fontName Tahoma" style="font-family:'Tahoma'">Tahoma</a></li><li><a data-edit="fontName Times" style="font-family:'Times'">Times</a></li><li><a data-edit="fontName Times New Roman" style="font-family:'Times New Roman'">Times New Roman</a></li><li><a data-edit="fontName Verdana" style="font-family:'Verdana'">Verdana</a></li></ul>
+                      </div>
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a data-edit="fontSize 5" class="fs-Five">Huge</a></li>
+                              <li><a data-edit="fontSize 3" class="fs-Three">Normal</a></li>
+                              <li><a data-edit="fontSize 1" class="fs-One">Small</a></li>
+                          </ul>
+                      </div>
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="strikethrough" title="" data-original-title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+                      </div>
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm" data-edit="insertunorderedlist" title="" data-original-title="Bullet list"><i class="fa fa-list-ul"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="insertorderedlist" title="" data-original-title="Number list"><i class="fa fa-list-ol"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="outdent" title="" data-original-title="Reduce indent (Shift+Tab)"><i class="fa fa-outdent"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="indent" title="" data-original-title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+                      </div>
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm" data-edit="justifyleft" title="" data-original-title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="justifycenter" title="" data-original-title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="justifyright" title="" data-original-title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="justifyfull" title="" data-original-title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+                      </div>
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="fa fa-link"></i></a>
+                          <div class="dropdown-menu input-append">
+                              <input placeholder="URL" type="text" data-edit="createLink">
+                              <button class="btn btn-sm" type="button">Add</button>
+                          </div>
+                      </div>
+
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="fa fa-unlink"></i></a>
+                          <span class="btn btn-default btn-sm" title="Insert picture (or just drag &amp; drop)" id="pictureBtn"> <i class="fa fa-image"></i>
+                              <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;"></span>
+                      </div>
+                      <div class="btn-group">
+                          <a class="btn btn-default btn-sm" data-edit="undo" title="" data-original-title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+                          <a class="btn btn-default btn-sm" data-edit="redo" title="" data-original-title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+                      </div>
+                      <input class="pull-right" type="text" data-edit="inserttext" id="voiceBtn" style="display: none;">
+                  </div>
+
+                  <div id="editor" class="lead placeholderText" data-placeholder="Lorem ipsum..." contenteditable="true"></div>
+                  <button type="reset" class="btn btn-danger">Reset</button>
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <!-- WYSIWYG -->
+    <script src="js/bootstrap-wysiwyg.min.js"></script>
+    <script src="js/jquery.hotkeys.js"></script>
+    <script src="js/prettify.js"></script>
+    <script>
+    $(function ()
+    {
+        function initToolbarBootstrapBindings()
+        {
+            var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
+                'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
+                'Times New Roman', 'Verdana'],
+                    fontTarget = $('[title=Font]').siblings('.dropdown-menu');
+
+            $.each(fonts, function (idx, fontName)
+            {
+                fontTarget.append($('<li><a data-edit="fontName ' + fontName + '" style="font-family:\'' + fontName + '\'">' + fontName + '</a></li>'));
+            });
+
+            $('a[title]').tooltip({container: 'body'});
+
+            $('.dropdown-menu input').click(function () {
+                return false;
+            })
+                    .change(function ()
+                    {
+                        $(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');
+                    }).keydown('esc', function ()
+            {
+                this.value = '';
+                $(this).change();
+            });
+
+            $('[data-role=magic-overlay]').each(function ()
+            {
+                var overlay = $(this), target = $(overlay.data('target'));
+                overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
+            });
+
+            if ("onwebkitspeechchange"  in document.createElement("input"))
+            {
+                var editorOffset = $('#editor').offset();
+                //$('#voiceBtn').css('position','absolute').offset({top: editorOffset.top, left: editorOffset.left+$('#editor').innerWidth()-35});
+            }
+
+            else
+            {
+                $('#voiceBtn').hide();
+            }
+        }
+        ;
+
+        function showErrorAlert(reason, detail)
+        {
+            var msg = '';
+            if (reason === 'unsupported-file-type')
+            {
+                msg = "Unsupported format " + detail;
+            }
+            else
+            {
+                console.log("error uploading file", reason, detail);
+            }
+
+            $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                    '<strong>File upload error</strong> ' + msg + ' </div>').prependTo('#alerts');
+        }
+        ;
+
+        initToolbarBootstrapBindings();
+
+        $('#editor').wysiwyg({fileUploadError: showErrorAlert});
+
+        window.prettyPrint && prettyPrint();
+    });
+    </script>
+
+</body>
+
+</html>
